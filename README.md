@@ -35,6 +35,6 @@ A ordem escolhida foi baseada principalmente na viabilidade de aplicação no pr
 4) NN LInear<br/>
 Para o critério de detecção de emoções, os Filtros de Correlação Cruzada se destacam, pois devido ao seu funcionamento de imagem de entrada com um filtro projetado, ficaria mais fácil classificar uma face trsite de uam feliz por exemplo. Já o Haar Cascade teria bem mais erros se fosse usado nessa situação, pois ele trabalha com o modelo de imagens positivas e negativas, de modo que para ele seria muito fácil confundir uma face feliz com uma triste, ou apenas uma face com qualquer outra emoção detectada.
 ### 2.4
-**A solução apresentada ou qualquer outra das que foram listadas na questão 2.2. tem a capacidade de considerar variações de um frame para outro (e.g. perceber que em um frame a pessoa está feliz e isso influenciar na detecção do próximo frame)? Se não, quais alterações poderiam ser feitas para que isso seja possível?**
+**A solução apresentada ou qualquer outra das que foram listadas na questão 2.2. tem a capacidade de considerar variações de um frame para outro (e.g. perceber que em um frame a pessoa está feliz e isso influenciar na detecção do próximo frame)? Se não, quais alterações poderiam ser feitas para que isso seja possível?**<br/>
 Não. Na aplicação em questão uma possível solução seria treinar o modelo baseado nos resultados do modelo anterior, mas isso sendo feito de modo contínua por meio de uma iteração, assim, a cada predição seria relaizada uma nova predição baseada na anterior.
 
